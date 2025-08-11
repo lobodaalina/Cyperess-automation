@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cypress": "^14.5.4"
+  },
+  "name": "cyperess-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobodaalina/Cyperess-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lobodaalina/Cyperess-automation/issues"
+  },
+  "homepage": "https://github.com/lobodaalina/Cyperess-automation#readme"
+}
