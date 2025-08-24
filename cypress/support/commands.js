@@ -16,6 +16,7 @@ Cypress.Commands.add('login', (email, password) => {
     cy.get('#signinEmail').type(email);
     cy.get('#signinPassword').type(password, { sensitive: true });
     cy.contains('button', 'Login').click();
+    cy.url().should('include', '/panel/garage')
 })
 //
 //
