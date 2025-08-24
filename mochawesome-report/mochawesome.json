@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-24T09:06:44.201Z",
+    "end": "2025-08-24T09:06:51.590Z",
+    "duration": 7389,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0dc64857-0701-4d9c-85f3-336355fcccc4",
+      "title": "",
+      "fullFile": "cypress/e2e/addCar.cy.js",
+      "file": "cypress/e2e/addCar.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "64ce2a38-0d4c-4d7e-a8e4-7bf59ca6afab",
+          "title": "Garage Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add car with valid info",
+              "fullTitle": "Garage Functionality should add car with valid info",
+              "timedOut": null,
+              "duration": 4526,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_garagePage.default.clickAddCarButton();\n_garagePage.default.selectCarBrand(1);\n_garagePage.default.selectCarModel(0);\n_garagePage.default.typeMileage('3000');\n_garagePage.default.clickAddButton();\n_garagePage.default.carList.should('exist');",
+              "err": {},
+              "uuid": "db352396-5c05-460a-940b-497b13c662b1",
+              "parentUUID": "64ce2a38-0d4c-4d7e-a8e4-7bf59ca6afab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should add fuel expenses",
+              "fullTitle": "Garage Functionality should add fuel expenses",
+              "timedOut": null,
+              "duration": 2810,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/panel/expenses');\n_expensesPage.default.clickAddExpenseButton();\n_expensesPage.default.typeMileage();\n_expensesPage.default.typeLiters(200);\n_expensesPage.default.typeTotalCost(300);\n_expensesPage.default.clickAddButton();",
+              "err": {},
+              "uuid": "4dd31edc-7922-451c-979e-8e95a390ef6e",
+              "parentUUID": "64ce2a38-0d4c-4d7e-a8e4-7bf59ca6afab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "db352396-5c05-460a-940b-497b13c662b1",
+            "4dd31edc-7922-451c-979e-8e95a390ef6e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7336,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
