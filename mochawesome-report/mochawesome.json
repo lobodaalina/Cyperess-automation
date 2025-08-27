@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-24T09:06:44.201Z",
-    "end": "2025-08-24T09:06:51.590Z",
-    "duration": 7389,
+    "start": "2025-08-24T09:12:13.580Z",
+    "end": "2025-08-24T09:12:21.260Z",
+    "duration": 7680,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0dc64857-0701-4d9c-85f3-336355fcccc4",
+      "uuid": "81f1364e-5bd8-4571-88a2-c7e76fc703d8",
       "title": "",
       "fullFile": "cypress/e2e/addCar.cy.js",
       "file": "cypress/e2e/addCar.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "64ce2a38-0d4c-4d7e-a8e4-7bf59ca6afab",
+          "uuid": "e4582ff5-1987-4177-8d76-decf75bccafa",
           "title": "Garage Functionality",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should add car with valid info",
               "fullTitle": "Garage Functionality should add car with valid info",
               "timedOut": null,
-              "duration": 4526,
+              "duration": 4556,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_garagePage.default.clickAddCarButton();\n_garagePage.default.selectCarBrand(1);\n_garagePage.default.selectCarModel(0);\n_garagePage.default.typeMileage('3000');\n_garagePage.default.clickAddButton();\n_garagePage.default.carList.should('exist');",
               "err": {},
-              "uuid": "db352396-5c05-460a-940b-497b13c662b1",
-              "parentUUID": "64ce2a38-0d4c-4d7e-a8e4-7bf59ca6afab",
+              "uuid": "383f7383-0142-4424-9d2c-91952dfa7997",
+              "parentUUID": "e4582ff5-1987-4177-8d76-decf75bccafa",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should add fuel expenses",
               "fullTitle": "Garage Functionality should add fuel expenses",
               "timedOut": null,
-              "duration": 2810,
+              "duration": 3069,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visit('/panel/expenses');\n_expensesPage.default.clickAddExpenseButton();\n_expensesPage.default.typeMileage();\n_expensesPage.default.typeLiters(200);\n_expensesPage.default.typeTotalCost(300);\n_expensesPage.default.clickAddButton();",
               "err": {},
-              "uuid": "4dd31edc-7922-451c-979e-8e95a390ef6e",
-              "parentUUID": "64ce2a38-0d4c-4d7e-a8e4-7bf59ca6afab",
+              "uuid": "52467ae1-98e9-49e2-a5d9-5892ebdfe808",
+              "parentUUID": "e4582ff5-1987-4177-8d76-decf75bccafa",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "db352396-5c05-460a-940b-497b13c662b1",
-            "4dd31edc-7922-451c-979e-8e95a390ef6e"
+            "383f7383-0142-4424-9d2c-91952dfa7997",
+            "52467ae1-98e9-49e2-a5d9-5892ebdfe808"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7336,
+          "duration": 7625,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
