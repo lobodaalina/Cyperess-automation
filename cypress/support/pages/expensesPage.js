@@ -4,6 +4,14 @@ class ExpensesPage {
         return cy.contains('button', 'Add an expense');
     }
 
+    get carDropdown() {
+        return cy.get('#carSelectDropdown')
+    }
+
+    get carList() {
+        return cy.get('.car-select-dropdown_menu')
+    }
+
     get litersInput() {
         return cy.get('#addExpenseLiters')
     }
@@ -19,6 +27,16 @@ class ExpensesPage {
     get mileageInput() {
         return cy.get('#addExpenseMileage')
     } 
+
+    get table() {
+        return cy.get('td')
+    }
+
+    selectCar(brand) {
+        this.carDropdown.click();
+        cy.contains('li.car-select-dropdown_item:not(.disabled)', brand).click();
+        return this;
+    }
 
     typeMileage(miles) {
         this.mileageInput.type('{uparrow}');
