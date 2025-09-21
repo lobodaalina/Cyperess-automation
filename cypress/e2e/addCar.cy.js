@@ -30,7 +30,7 @@ describe('Garage Functionality', () => {
         mileage: 3200,
         liters: 20,
         totalCost: 20,
-        reportedAt: '2025-08-28',
+        reportedAt: '2025-09-21',
       }).then((response3) => {
         console.log(response3.body)
         expect(response3.status).to.eq(200);
@@ -47,7 +47,7 @@ describe('Garage Functionality', () => {
     ExpensesPage.selectCar('BMW 3')
     ExpensesPage.table.should('contain.text', '3200')
     ExpensesPage.table.should('contain.text', '20L')
-    ExpensesPage.table.should('contain.text', '28.08.2025')
+    ExpensesPage.table.should('contain.text', '21.09.2025')
     ExpensesPage.table.should('contain.text', '20.00 USD')
 
 
